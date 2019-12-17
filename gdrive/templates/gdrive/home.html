@@ -1,0 +1,14 @@
+<html>
+<body>
+    <h1> Welcome to Sasta Google Drive! </h1>
+    <h3> Files you have uploaded </h3>
+    <ol>
+    {% for file in files %}
+    <li>{{ file.files }}</li>
+    {% endfor %} <br><br>
+    </ol>
+    <a href="{% url 'upload' %}"> Upload Files and Photos! </a><br>
+    <a href="{% url 'download' %}"> Download Files </a>
+
+</body>
+</html>

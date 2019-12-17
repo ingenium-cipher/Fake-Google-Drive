@@ -1,0 +1,10 @@
+<html>
+<body>
+<h3> Click on the link to download the file </h3>
+{% for file in files %}
+<a href="{{ file.files.url }}" download="{{ file.files }}"> {{ file.files }} </a><br>
+{% endfor %}
+
+</body>
+
+</html>
